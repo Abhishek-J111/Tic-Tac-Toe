@@ -65,8 +65,7 @@ class _HomepageState extends State<Homepage> {
         "empty",
         "empty",
         "empty",
-        "empty","empty","empty","empty","empty","empty","empty",
-
+        
       ];
       this.message="";
 
@@ -120,8 +119,8 @@ playGame(int index)
 checkWin() {
   if ((gameState[0] != 'empty') &&
       (gameState[0]== gameState[1]) &&
-      (gameState[1] == gameState[2])&&
-      (gameState[2])== gameState[3])
+      (gameState[1] == gameState[2]))
+      
 {
         setState((){
         this.message = '${this.gameState[0]} wins';
@@ -130,20 +129,19 @@ checkWin() {
 
 }
 
-else if((gameState[4] != 'empty') &&
-      (gameState[4]== gameState[5]) &&
-      (gameState[5] == gameState[6]) &&
-      gameState[6]== gameState[7])
+else if((gameState[3] != 'empty') &&
+      (gameState[3]== gameState[4]) &&
+      (gameState[4] == gameState[5]) )
+
      { setState(() {
         this.message = '${this.gameState[3]} wins';
 
       });
 }
 
-else if((gameState[8] != 'empty') &&
-      (gameState[8]== gameState[9]) &&
-      (gameState[9] == gameState[10])&&
-      (gameState[10]== gameState [11]))
+else if((gameState[6] != 'empty') &&
+      (gameState[6]== gameState[7]) &&
+      (gameState[7] == gameState[8]))
      { setState(() {
         this.message = '${this.gameState[6]} wins';
 
@@ -160,9 +158,8 @@ else if((gameState[3] != 'empty') &&
 }
 
 else if((gameState[0] != 'empty') &&
-      (gameState[0]== gameState[4]) &&
-      (gameState[4] == gameState[8])&&
-      gameState[8]== gameState[12])
+      (gameState[0]== gameState[3]) &&
+      (gameState[3] == gameState[6]))
      { setState(() {
         this.message = '${this.gameState[0]} wins';
 
@@ -170,19 +167,17 @@ else if((gameState[0] != 'empty') &&
 }
 
 else if((gameState[1] != 'empty') &&
-      (gameState[1]== gameState[5]) &&
-      (gameState[5] == gameState[9])&&
-      (gameState[9]== gameState[13]))
+      (gameState[1]== gameState[4]) &&
+      (gameState[4] == gameState[7]))
      { setState(() {
         this.message = '${this.gameState[1]} wins';
 
       });
 }
 
-else if((gameState[3] != 'empty') &&
-      (gameState[3]== gameState[7]) &&
-      (gameState[7] == gameState[11])&&
-      (gameState[11] == gameState[15]))
+else if((gameState[2] != 'empty') &&
+      (gameState[2]== gameState[5]) &&
+      (gameState[5] == gameState[8]))
      { setState(() {
         this.message = '${this.gameState[2]} wins';
 
@@ -190,19 +185,17 @@ else if((gameState[3] != 'empty') &&
 }
 
 else if((gameState[0] != 'empty') &&
-      (gameState[0]== gameState[5]) &&
-      (gameState[5] == gameState[10])&&
-      (gameState[10] == gameState[15]))
+      (gameState[0]== gameState[4]) &&
+      (gameState[4] == gameState[8]))
      { setState(() {
         this.message = '${this.gameState[0]} wins';
 
       });
 }
 
-else if((gameState[3] != 'empty') &&
-      (gameState[3]== gameState[6]) &&
-      (gameState[6] == gameState[9])&&
-      (gameState[9]== gameState[12]))
+else if((gameState[2] != 'empty') &&
+      (gameState[2]== gameState[4]) &&
+      (gameState[4] == gameState[6]))
      { setState(() {
         this.message = '${this.gameState[2]} wins';
 
